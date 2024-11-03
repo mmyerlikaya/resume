@@ -10,7 +10,9 @@ urlpatterns = [
     
     path("pages/", include("django.contrib.flatpages.urls")),
     path('', views.index, name='home'),
-    path('about/', views.about, name='about' ),
+    path('about.html/', views.about, name='about'),
+    path('resume.html', views.resume, name='resume'),
+    path('contact.html', views.contact, name='contact'),
     
 ]
 
